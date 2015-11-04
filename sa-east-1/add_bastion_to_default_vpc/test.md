@@ -27,7 +27,8 @@ VPC ID: vpc-67b83402 (docker weavorm)
     * IAM Role deletion: https://papertrailapp.com/groups/1993213/events?centered_on_id=598668426361503753&q=program%3Aecs-bartnet-21-bartnet-e6f9e8bcc7d8fbd2c001
     * Rollback: https://papertrailapp.com/groups/1993213/events?centered_on_id=598668429884719107&q=program%3Aecs-bartnet-21-bartnet-e6f9e8bcc7d8fbd2c001
     * Success? : https://papertrailapp.com/groups/1993213/events?centered_on_id=598668429939245064&q=program%3Aecs-bartnet-21-bartnet-e6f9e8bcc7d8fbd2c001
-    
+    * See curl request in ./curl-test-1.sh for auth bearer
+
     #### Post
     
     * No bastion instance exists in sa-east-1 due to unknown error
