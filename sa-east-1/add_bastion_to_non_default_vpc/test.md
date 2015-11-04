@@ -1,6 +1,4 @@
-#Test Log
-
-
+#Test 1
 ## Pre
 1. Several weeks ago, I created a VPC docker-weavorm in sa-east-1
 2. Created an instance with security group that allows TCP via all ports.  This will run an AMI with a python service SimpleHTTPServer.  Different handlers will respond differently.
@@ -32,3 +30,26 @@ VPC ID: vpc-57581e32 (docker weavorm)
     
     * No bastion instance exists in sa-east-1 due to connection error
     
+    
+    
+# Test 2
+```
+Nov 4. 1PM
+Same environment
+```
+1. After Region Select screen, Entering credentials
+
+ > Received error (same as previous): WebSocket connection to 'wss://api.opsee.com/stream/' failed: Connection closed before receiving a handshake response 
+ 
+2. Eventually got to VPC Select screen.  Reached failure due to error described above in #1. However, bartnet received the command to launch.
+
+WebSocket connection to 'wss://api.opsee.com/stream/' failed: Connection closed before receiving a handshake response.  
+
+  * See: 
+  * launch event: https://papertrailapp.com/groups/1993213/events?centered_on_id=598664346226458625&q=program%3Aecs-bartnet-21-bartnet-e6f9e8bcc7d8fbd2c001
+  * create status: https://papertrailapp.com/groups/1993213/events?centered_on_id=598664864046841857&q=program%3Aecs-bartnet-21-bartnet-e6f9e8bcc7d8fbd2c001
+  * failure: https://papertrailapp.com/groups/1993213/events?centered_on_id=598664868182425614&q=program%3Aecs-bartnet-21-bartnet-e6f9e8bcc7d8fbd2c001
+  * rollback: https://papertrailapp.com/groups/1993213/events?centered_on_id=598664872242511884&q=program%3Aecs-bartnet-21-bartnet-e6f9e8bcc7d8fbd2c001
+  
+  ### Post
+  	Same as in Test 1
