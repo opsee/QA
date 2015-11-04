@@ -6,7 +6,7 @@
 
 ## Tests
 
-### Create a new bastion in a VPC that isn't default, in region sa-east-1
+### Create a new bastion in the default VPC in region sa-east-1
 ```
 Nov 4, 1:05 PM
 info:
